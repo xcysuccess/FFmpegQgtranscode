@@ -1,0 +1,14 @@
+prefix=/Users/tomxiang/develop/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/tomxiang/develop/ffmpeg/lib
+includedir=/Users/tomxiang/develop/ffmpeg/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.14.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Libs.private: 
+Cflags: -I${includedir}
